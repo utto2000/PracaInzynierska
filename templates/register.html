@@ -1,0 +1,39 @@
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+    <title>Registraion</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+ 
+   
+    <form method="POST" actione="." class="login-form spacer" id="signup-form"> 
+        <div class="circle-wrapper">
+            <img class="cloud-logo" src="{% static 'icons/cloud_logo.png' %}" alt="CloudOnSite Logo">
+        <h1 class="cloud-heading">CloudOnSite</h1>
+        
+    </div>
+        {% csrf_token %} 
+         
+            <div class="input-group"> 
+                <img class="icon input-icon" src="{% static 'icons/profile-user.svg' %}" alt=""> 
+                {{form.username}} 
+            </div> 
+            <div class="input-group"> 
+                <img class="icon input-icon" src="{% static 'icons/envelope.png' %}" alt=""> 
+                {{form.email}} 
+            </div> 
+            <div class="input-group"> 
+                <img class="icon input-icon" src="{% static 'icons/key.png' %}" alt=""> 
+                {{form.password1}} 
+            </div> 
+            <div class="input-group"> 
+                <img class="icon input-icon" src="{% static '/icons/key.png' %}" alt=""> 
+                {{form.password2}} 
+            </div> 
+  
+            <input type="submit" class="submit" value="Signup"> 
+    </form>  
+
+ 
+</body>
