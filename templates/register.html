@@ -3,16 +3,23 @@
     <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
     <title>Registraion</title>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+    
+    function redirectToLoginPage() {
+        window.location.href = "{% url 'login' %}"; // Zmień "adres-docelowej-strony" na adres docelowej strony
+    }
+</script>
+
 </head>
 <body>
  
    
-    <form method="POST" actione="." class="login-form spacer" id="signup-form"> 
+    <form method="POST" action="." class="login-form spacer" id="signup-form"> 
         <div class="circle-wrapper">
             <img class="cloud-logo" src="{% static 'icons/cloud_logo.png' %}" alt="CloudOnSite Logo">
         <h1 class="cloud-heading">CloudOnSite</h1>
         
-    </div>
+        </div>
         {% csrf_token %} 
          
             <div class="input-group"> 
@@ -30,9 +37,18 @@
             <div class="input-group"> 
                 <img class="icon input-icon" src="{% static '/icons/key.png' %}" alt=""> 
                 {{form.password2}} 
-            </div> 
-  
+            </div>
+             {% if form.errors %}
+        <div class="error-message">
+            {% for field in form %}
+                {% if field.errors %}
+                    <p class="error" style="list-style-type: none">{{ field.errors}}</p>
+                {% endif %}
+            {% endfor %}
+        </div>
+    {% endif %}
             <input type="submit" class="submit" value="Signup"> 
+            <input type="button"  class="submit" value="Signin" onclick="redirectToLoginPage()">
     </form>  
 
  

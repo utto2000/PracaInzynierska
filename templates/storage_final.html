@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'CSS/storage.css' %}">
+    <title>CLOUDONSITE</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script>
+        function showDescription(optionId, descriptionId) {
+            var option = document.getElementById(optionId);
+            var description = document.getElementById(descriptionId);
+            var descriptions = document.querySelectorAll('.description');
+            descriptions.forEach(function(desc) {
+                desc.innerHTML = '';
+            });
+            if (option.checked) {
+                description.innerHTML = option.getAttribute('data-description');
+            }
+        }
+    </script>
+</head>
+    <body>
+     
+    <div class="header">
+      <div class="header_logo">
+          <p>tu bedzie logo</p>
+    {#    <img src="logo.png" alt="Logo Firmy" class="logo"> <!-- Zmienione na obrazek -->#}
+      </div>
+      <div class="header_context">
+        <a href="#">Moje konto</a> <!-- Zmieniono kolejność linków -->
+        <a href="{% url 'logout' %}">Wyloguj</a>
+      </div>
+    </div>
+    
+   <div class="section">
+    <h1>Analaze</h1>
+        {% csrf_token %} 
+       
+   </div>
+    </body>

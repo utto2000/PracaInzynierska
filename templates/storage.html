@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'CSS/storage.css' %}">
+    <title>CLOUDONSITE</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script>
+        function showDescription(optionId, descriptionId) {
+            var option = document.getElementById(optionId);
+            var description = document.getElementById(descriptionId);
+            var descriptions = document.querySelectorAll('.description');
+            descriptions.forEach(function(desc) {
+                desc.innerHTML = '';
+            });
+            if (option.checked) {
+                description.innerHTML = option.getAttribute('data-description');
+            }
+        }
+    </script>
+</head>
+    <body>
+     
+    <div class="header">
+      <div class="header_logo">
+          <p>tu bedzie logo</p>
+    {#    <img src="logo.png" alt="Logo Firmy" class="logo"> <!-- Zmienione na obrazek -->#}
+      </div>
+      <div class="header_context">
+        <a href="#">Moje konto</a> <!-- Zmieniono kolejność linków -->
+        <a href="{% url 'logout' %}">Wyloguj</a>
+      </div>
+    </div>
+    
+   <div class="section">
+    <h1>Select what you need</h1>
+
+    <form action="/home/storage/final" method="post">
+        {% csrf_token %} 
+        
+        <!-- Amount of stored data -->
+        <div class="option">
+            <label for="storage">Amount of stored data</label><br>
+            <input type="radio" id="storage_10tb" name="storage" value="10tb" data-description="1PB is a petabyte of data, which is a huge amount of data. " onchange="showDescription('storage_1pb', 'storage_description')">
+            <label for="storage_10TB">10TB</label><br>
+            <input type="radio" id="storage_1pb" name="storage" value="1pb" data-description="1PB is a petabyte of data, which is a huge amount of data. " onchange="showDescription('storage_1pb', 'storage_description')">
+            <label for="storage_1pb">1PB</label><br>
+            <input type="radio" id="storage_10pb" name="storage" value="10pb" data-description="10PB is ten petabytes of data, which is an even larger amount of data than 1PB. " onchange="showDescription('storage_10pb', 'storage_description')">
+            <label for="storage_10pb">10PB</label><br>
+            <input type="radio" id="storage_100pb" name="storage" value="100pb" data-description="100PB is one hundred petabytes of data, which is a tremendous amount of data. " onchange="showDescription('storage_100pb', 'storage_description')">
+            <label for="storage_100pb">100PB</label><br>
+            <p id="storage_description" class="description"> </p>
+        </div>
+        
+        <div class="option">
+            <label for="disks">Do you prefer 2.5mm or 3.5 mm disks?</label><br>
+            <input type="radio" id="disks_2_5" name="disks" value="2_5" data-description="2.5mm disks are smaller and more compact, while 3.5mm disks offer greater capacity. Which do you prefer? " onchange="showDescription('disks_2_5', 'disks_description')">
+            <label for="disks_2_5">Preferred 2.5 mm disks</label><br>
+            <input type="radio" id="disks_3_5" name="disks" value="3_5" data-description="3.5mm disks are larger and typically offer more capacity than 2.5mm disks. Which do you prefer? " onchange="showDescription('disks_3_5', 'disks_description')">
+            <label for="disks_3_5">Preferred 3.5 mm disks</label><br>
+            <p id="disks_description" class="description"> </p>
+        </div>
+
+        
+        
+
+        <!-- Amount of RAM -->
+        <div class="option">
+            <label for="ram">Amount of RAM</label><br>
+            <input type="radio" id="ram_100" name="ram" value="100" data-description="100GB RAM is suitable for lighter workloads. " onchange="showDescription('ram_100', 'ram_description')">
+            <label for="ram_100">100 GB RAM</label><br>
+            <input type="radio" id="ram_200" name="ram" value="200" data-description="200GB RAM is a significantly larger amount that can handle heavier workloads. " onchange="showDescription('ram_200', 'ram_description')">
+            <label for="ram_200">200 GB RAM</label><br>
+            <input type="radio" id="ram_300" name="ram" value="300" data-description="300GB RAM is a very large amount of memory that can handle very heavy workloads. " onchange="showDescription('ram_300', 'ram_description')">
+            <label for="ram_300">300 GB RAM</label><br>
+            <p id="ram_description" class="description"> </p>
+        </div>
+
+        <!-- Type of RAM -->
+        <div class="option">
+            <label for="ram_type">Type of RAM</label><br>
+            <input type="radio" id="lowend_ram" name="ram_type" value="lowend" data-description="Low-end RAM is cheaper but may have lower performance compared to other types of RAM. " onchange="showDescription('lowend_ram', 'ram_type_description')">
+            <label for="lowend_ram">Low-end</label><br>
+            <input type="radio" id="middleend_ram" name="ram_type" value="middleend" data-description="Middle-end RAM offers a balance between price and performance. " onchange="showDescription('middleend_ram', 'ram_type_description')">
+            <label for="middleend_ram">Middle-end</label><br>
+            <input type="radio" id="highend_ram" name="ram_type" value="highend" data-description="High-end RAM offers the highest performance but may be more expensive. " onchange="showDescription('highend_ram', 'ram_type_description')">
+            <label for="highend_ram">High-end</label><br>
+            <p id="ram_type_description" class="description"> </p>
+        </div>
+
+        <!-- Processors -->
+        <div class="option">
+            <label for="processors">Processors</label><br>
+            <input type="radio" id="lowend_processors" name="processors" value="lowend" data-description="Low-end processors are cheaper but may have lower performance compared to other types of processors. " onchange="showDescription('lowend_processors', 'processors_description')">
+            <label for="lowend_processors">Low-end</label><br>
+            <input type="radio" id="middleend_processors" name="processors" value="middleend" data-description="Middle-end processors offer a balance between price and performance. " onchange="showDescription('middleend_processors', 'processors_description')">
+            <label for="middleend_processors">Middle-end</label><br>
+            <input type="radio" id="highend_processors" name="processors" value="highend" data-description="High-end processors offer the highest performance but may be more expensive. " onchange="showDescription('highend_processors', 'processors_description')">
+            <label for="highend_processors">High-end</label><br>
+            <p id="processors_description" class="description"> </p>
+        </div>
+
+        <!-- RAID -->
+        <div class="option">
+            <label for="raid">RAID 5 or 6?</label><br>
+            <input type="radio" id="raid_5" name="raid" value="5" data-description="RAID 5 offers a balance between performance and data security. " onchange="showDescription('raid_5', 'raid_description')">
+            <label for="raid_5">RAID 5</label><br>
+            <input type="radio" id="raid_6" name="raid" value="6" data-description="RAID 6 offers higher data security at the expense of performance. " onchange="showDescription('raid_6', 'raid_description')">
+            <label for="raid_6">RAID 6</label><br>
+            <p id="raid_description" class="description"> </p>
+        </div>
+        <input type="submit" class="submit" value="Analyze">
+    </form>
+   </div>
+    </body>

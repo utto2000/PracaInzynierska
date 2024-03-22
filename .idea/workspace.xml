@@ -4,44 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33564bee-9040-4e71-99de-6c8357db50a5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/DjangoInzynierka.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudOnSite/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudOnSite/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudOnSite/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudOnSite/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudOnSite/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudOnSite/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudOnSite/static/CSS/style-with-prefix.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudOnSite/static/CSS/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudOnSite/static/icons/cloud_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudOnSite/static/icons/envelope.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudOnSite/static/icons/key.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudOnSite/static/icons/profile-user.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudOnSite/static/images/cover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudOnSite/static/images/fb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudOnSite/static/images/google.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudOnSite/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CloudOnSite/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DjangoInzynierka/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DjangoInzynierka/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DjangoInzynierka/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DjangoInzynierka/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DjangoInzynierka/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/CSS/style-with-prefix.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/images/cover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/images/fb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/images/google.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/register/CSS/style.css" afterDir="false" />
+    <list default="true" id="33564bee-9040-4e71-99de-6c8357db50a5" name="Changes" comment="Test">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Accounts/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudOnSite/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudOnSite/migrations/0002_storageram_storageserver_storageproc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudOnSite/migrations/0003_storageshelf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudOnSite/migrations/0004_cloudstorage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudOnSite/static/CSS/home_page.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudOnSite/static/CSS/storage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudOnSite/static/icons/logo_cos.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudOnSite/static/icons/tlo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudOnSite/static/icons/tlo2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/storage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/storage_final.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudOnSite/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/CloudOnSite/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudOnSite/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/CloudOnSite/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudOnSite/static/CSS/style-with-prefix.css" beforeDir="false" afterPath="$PROJECT_DIR$/CloudOnSite/static/CSS/style-with-prefix.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudOnSite/static/CSS/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/CloudOnSite/static/CSS/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudOnSite/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/CloudOnSite/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoInzynierka/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoInzynierka/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/CSS/style-with-prefix.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/register/CSS/style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,18 +45,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
-        <option value="CSS File" />
         <option value="Python Script" />
+        <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2dKITAnE5DhO1QoFwPxxzHQ9aZL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -82,6 +73,7 @@
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/barte/PycharmProjects/DjangoInzynierka/CloudOnSite/static/icons",
@@ -105,10 +97,10 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\barte\PycharmProjects\DjangoInzynierka\CloudOnSite\static\icons" />
+      <recent name="C:\Users\barte\PycharmProjects\DjangoInzynierka\CloudOnSite\static" />
+      <recent name="C:\Users\barte\PycharmProjects\DjangoInzynierka\CloudOnSite\static\CSS" />
       <recent name="C:\Users\barte\PycharmProjects\DjangoInzynierka\CloudOnSite" />
       <recent name="C:\Users\barte\PycharmProjects\DjangoInzynierka\DjangoInzynierka" />
-      <recent name="C:\Users\barte\PycharmProjects\DjangoInzynierka\static" />
-      <recent name="C:\Users\barte\PycharmProjects\DjangoInzynierka\templates\icons" />
     </key>
   </component>
   <component name="RunManager">
@@ -153,8 +145,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709750348089</updated>
-      <workItem from="1709750512012" duration="11831000" />
+      <workItem from="1709750512012" duration="12695000" />
+      <workItem from="1710354060667" duration="751000" />
+      <workItem from="1710357904196" duration="1039000" />
+      <workItem from="1710591030555" duration="73513000" />
     </task>
+    <task id="LOCAL-00001" summary="Test">
+      <option name="closed" value="true" />
+      <created>1709762556963</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709762556964</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,5 +166,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test" />
   </component>
 </project>

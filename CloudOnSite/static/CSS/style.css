@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #26b3fb;
+    /*background-color: #26b3fb;*/
 }
-/* Wyśrodkowanie formularza */
+
 .login-form {
 
     background-color: #ffffff;
@@ -22,7 +22,7 @@ body{
     box-shadow: 10vh 4vh 10vh 3vh rgba(0, 0, 0, 0.3);
 }
 
-/* Styl ikon */
+
 .icon {
     width: 24px;
     height: 24px;
@@ -44,6 +44,8 @@ body{
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 13vh;
+    margin-top: 3vh;
 }
 
 .submit:hover {

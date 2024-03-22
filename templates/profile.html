@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mój Profil</title>
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+</head>
+<body>
+ <form method="POST" action="." class="login-form spacer" id="signin-form"> 
+        <div class="circle-wrapper">
+            <img class="cloud-logo" src="{% static 'icons/cloud_logo.png' %}" alt="CloudOnSite Logo">
+        <h1 class="cloud-heading">CloudOnSite</h1>
+        
+    </div>
+        {% csrf_token %} 
+         
+        
+           <h1>My profile</h1>
+    <div>
+        <p><strong>Name:</strong> {{ profile.user.username }}</p>
+        <p><strong>Email:</strong> {{ profile.user.email }}</p>
+        <p><strong>Date of account created:</strong> {{ profile.user.date_joined }}</p>
+        <p><strong>Additional information:</strong> {{ profile.additional_info }}</p>
+    </div>
+        
+     
+    </form>  
+
+            
+
+    
+</body>
+</html>
